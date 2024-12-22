@@ -1,0 +1,202 @@
+.inc-exp-container {
+    padding: 1rem 2rem  2rem 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.left-container{
+    width: 30%;
+}
+
+.right-container{
+    width: 68%;
+}
+
+.filter-search {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.filter-search input, .filter-search select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.calendar-container {
+    text-align: center;
+}
+
+.rdrDateRangeWrapper{
+    background-color: #f5f7fa;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-box{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.selector-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 250px;
+}
+
+.selector-button {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.selector-button.active {
+    background-color: #ccc;
+}
+
+.selector-button:not(.active):hover {
+    background-color: #f0f0f0;
+}
+
+.selector-button:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.category-container {
+    background-color: #fff;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0 2rem 0;
+}
+
+.category-container-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.category-container h2 {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.chart {
+    width: 45%;
+}
+
+.category-list {
+    width: 45%;
+}
+
+.category-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-list th, .category-list td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-list th {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.category-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.category-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.category-list td {
+    color: #666;
+}
+
+.add-transaction-button {
+    background-color: black;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.transaction-list {
+    background-color: #fff;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.transaction-list h2 {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-list th, .transaction-list td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.transaction-list th:not(:nth-last-child(n+3)),
+.transaction-list td:not(:nth-last-child(n+3)) {
+    text-align: center;
+}
+
+.transaction-list th:nth-last-child(n+3),
+.transaction-list td:nth-last-child(n+3) {
+    text-align: left;
+}
+
+.transaction-list th {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.transaction-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transaction-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.transaction-list td {
+    color: #666;
+}
+
+.transaction-list td.positive {
+    color: green;
+}
+
+.transaction-list td.negative {
+    color: red;
+}
+
+.rdrCalendarWrapper {
+    z-index: 1001; /* Ensure it is above the modal overlay */
+}

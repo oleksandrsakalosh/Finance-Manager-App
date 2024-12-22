@@ -1,0 +1,135 @@
+.goals-limits-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.goals-container,
+.limits-container {
+    width: 45%;
+}
+
+.goals-container-header h2,
+.limits-container-header h2 {
+    text-align: center;
+    color: #666;
+}
+
+.add-goal-limit {
+    display: block;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #666;
+    padding: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.goal-card,
+.limit-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.goal-card-header,
+.limit-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goal-card-header h3,
+.limit-card-header h3{
+    color: #666;
+    width: 25%;
+}
+
+.edit-goal-button,
+.delete-goal-button,
+.edit-limit-button,
+.delete-limit-button {
+    color: black;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.edit-limit-button,
+.edit-goal-button{
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.delete-goal-button,
+.delete-limit-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.edit-goal-button,
+.edit-limit-button {
+    margin-right: 0.5rem;
+}
+
+.goal-card-content,
+.limit-card-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goal-card-right,
+.limit-card-right {
+    width: 150px;
+    height: 150px;
+}
+
+.feedback-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1000;
+    width: auto;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.feedback-message button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.feedback-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@keyframes fadein {
+    from { bottom: 0; opacity: 0; }
+    to { bottom: 20px; opacity: 1; }
+}
+

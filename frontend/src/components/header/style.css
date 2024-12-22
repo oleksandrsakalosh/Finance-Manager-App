@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f5f7fa;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-logo img {
+    height: 40px;
+}
+
+.header-menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    color: #4a90e2;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+}
+
+.header-right .add-transaction-button {
+    background-color: #7ed321;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-right .add-transaction-button:hover {
+    background-color: #6fbf1a;
+}
+
+.header-right .logout-button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-right .logout-button:hover {
+    background-color: #3b7cbf;
+}
